@@ -1,0 +1,131 @@
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+/* message */
+.alert-message {
+	background-color: #DFF0D8;
+	border-color: #D6E9C6;
+	color: #468847;
+}
+
+/* content */
+.item-page {
+	position: relative;
+}
+
+.item-page h2 {
+	margin-bottom: 20px;
+}
+
+.actions {
+	position: absolute;
+	top: 0;
+	right: 0;
+	list-style: none;
+}
+
+.actions li {
+	float: left;
+	margin-left: 5px;
+}
+
+.item-separator {
+	overflow: hidden;
+	border-bottom: 1px dashed #ccc;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+/* pagenav */
+.pagenav {
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+}
+
+.pagenav .pagenav-prev {
+	float: left;
+}
+
+.pagenav .pagenav-next {
+	float: right;
+}
+
+/* contentpane */
+.contentpane {
+	padding: 10px;
+}
+
+.contentpane .actions {
+	margin: 0;
+	top: 5px;
+	right: 5px;
+}
+
+/* login */
+#form-login-remember label {
+	display: inline;
+}
+
+/* Tooltips */
+.tip-wrap{
+    z-index: 10000;
+}
+.tip {
+   float: left;
+   background: #ffc;
+   border: 1px solid #D4D5AA;
+   padding: 5px;
+   max-width: 200px;
+}
+ 
+.tip-title {
+   padding: 0;
+   margin: 0;
+   font-size: 100%;
+   font-weight: bold;
+   margin-top: -15px;
+   padding-top: 15px;
+   padding-bottom: 5px;
+   background: url(../images/selector-arrow.png) no-repeat;
+}
+ 
+.tip-text {
+   font-size: 100%;
+   margin: 0;
+}
+
+/* form contact */
+#contact-form ul {
+	margin: 0;
+	list-style: none;
+}
+
+#contact-form legend {
+	font-size: 15px;
+}
+
+.inline label {
+	display: inline;
+}
+
+/* pages */
+.contact h2 {
+	margin-bottom: 10px;
+}
+
+/* items-more */
+.items-more {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.items-more h3 {
+	margin-bottom: 10px;
+}
