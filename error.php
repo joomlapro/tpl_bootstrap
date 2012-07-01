@@ -1,15 +1,15 @@
 <?php
 /**
- * @package    Bootstrap
+ * @package     Bootstrap
  * @subpackage  tpl_bootstrap
- * @copyright  Copyright (C) AtomTech, Inc. All rights reserved.
- * @license    GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright   Copyright (C) 2012 AtomTech, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-// no direct access
+// No direct access
 defined('_JEXEC') or die;
 
-// define variables
+// Define variables
 $path = $this->baseurl . '/templates/' . $this->template;
 $app = JFactory::getApplication();
 ?>
@@ -64,14 +64,16 @@ $app = JFactory::getApplication();
 				<div class="span9">
 					<?php
 					$messages = $app->getMessageQueue();
-					
-					if (count($messages)) {
-						foreach ($messages as $message) {
+
+					if (count($messages))
+					{
+						foreach ($messages as $message)
+						{
 							$html = '<div class="alert alert-' . strtolower($message['type']) . '">';
 							$html .= '<button data-dismiss="alert" class="close">×</button>';
 							$html .= '<strong>' . JText::_('TPL_BOOTSTRAP_MESSAGE_' . strtoupper($message['type'])) . '!</strong> ' . $message['message'];
 							$html .= '</div>';
-							
+
 							echo $html;
 						}
 					}

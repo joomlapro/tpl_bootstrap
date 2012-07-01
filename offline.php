@@ -1,15 +1,15 @@
 <?php
 /**
- * @package    Bootstrap
+ * @package     Bootstrap
  * @subpackage  tpl_bootstrap
- * @copyright  Copyright (C) AtomTech, Inc. All rights reserved.
- * @license    GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright   Copyright (C) 2012 AtomTech, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-// no direct access
+// No direct access
 defined('_JEXEC') or die;
 
-// define variables
+// Define variables
 $path = $this->baseurl . '/templates/' . $this->template;
 $app = JFactory::getApplication();
 ?>
@@ -29,7 +29,7 @@ $app = JFactory::getApplication();
 			<div class="span4">&nbsp;</div>
 			<div class="span4">
 				<div id="frame" class="outline">
-					<?php if ($app->getCfg('offline_image')) : ?>
+					<?php if ($app->getCfg('offline_image')): ?>
 					<img src="<?php echo $app->getCfg('offline_image'); ?>" alt="<?php echo htmlspecialchars($app->getCfg('sitename')); ?>" />
 					<?php endif; ?>
 					<h1>

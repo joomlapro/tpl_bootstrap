@@ -1,15 +1,15 @@
 <?php
 /**
- * @package    Bootstrap
+ * @package     Bootstrap
  * @subpackage  tpl_bootstrap
- * @copyright  Copyright (C) AtomTech, Inc. All rights reserved.
- * @license    GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright   Copyright (C) 2012 AtomTech, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-// no direct access
+// No direct access
 defined('_JEXEC') or die;
 
-// define variables
+// Define variables
 $path = $this->baseurl . '/templates/' . $this->template;
 $app = JFactory::getApplication();
 $frontend = JRequest::getVar('view') == 'featured';
@@ -24,9 +24,7 @@ JHtml::script('https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'
 		<link href="<?php echo $path ?>/css/bootstrap.min.css" rel="stylesheet">
 		<link href="<?php echo $path ?>/css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link href="<?php echo $path ?>/css/template.css" rel="stylesheet">
-		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php $path ?>/images/apple-touch-icon-144-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php $path ?>/images/apple-touch-icon-114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php $path ?>/images/apple-touch-icon-72-precomposed.png">
@@ -66,17 +64,19 @@ JHtml::script('https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'
 					<div class="row">
 						<jdoc:include type="modules" name="bootstrap-blocks" style="blocks" />
 					</div>
-					<?php else: ?>
-					<?php
+					<?php else:
+
 					$messages = $app->getMessageQueue();
-					
-					if (count($messages)) {
-						foreach ($messages as $message) {
+
+					if (count($messages))
+					{
+						foreach ($messages as $message)
+						{
 							$html = '<div class="alert alert-' . strtolower($message['type']) . '">';
 							$html .= '<button data-dismiss="alert" class="close">×</button>';
 							$html .= '<strong>' . JText::_('TPL_BOOTSTRAP_MESSAGE_' . strtoupper($message['type'])) . '!</strong> ' . $message['message'];
 							$html .= '</div>';
-							
+
 							echo $html;
 						}
 					}
